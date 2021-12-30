@@ -1,0 +1,15 @@
+pip install gTTS  
+pip install playsound  
+pip install pyttsx3
+
+import gtts  
+from playsound import playsound  
+
+# make a request to google to get synthesis  
+TTS = gtts.gTTS("HI I am Anand Maurya ")  
+
+# save the audio file  
+TTS.save("INTRO.mp3") 
+
+# play the audio file  
+playsound("INTRO.mp3")  
